@@ -7,7 +7,7 @@ import retrofit2.http.Query
 
 interface LoveApi {
     @GET("getPercentage")
-    abstract fun getLovePerc(
+    fun getLovePerc(
         @Query("fname") firstName: String,
         @Query("sname") secondName: String,
         @Header("X-RapidAPI-Key") key: String = "b222fac56cmsh96f7b06dc232303p1a0d69jsna405e07edfd4",

@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".onboarding.adapter.onBoardingFragment">
+        tools:context=".onboarding.adapter">
 
 
     <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/viewPager"
-        android:background="@color/white"
         android:layout_above="@+id/indicator2"
         android:layout_centerInParent="true"
-        />
+        android:background="@color/white"
+        tools:ignore="ExtraText" />
+
     <me.relex.circleindicator.CircleIndicator3
+        android:id="@+id/indicator2"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:id="@+id/indicator2"
         android:layout_alignParentBottom="true"
-        app:ci_drawable="@color/purple_700"/>
+        app:ci_drawable="@color/purple_700" />
 
-</FrameLayout>
+</RelativeLayout>

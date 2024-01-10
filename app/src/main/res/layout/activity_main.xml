@@ -32,6 +32,13 @@
         android:layout_gravity="center"
         android:text="GET"
         android:textSize="28sp" />
+    <Button
+    android:id="@+id/historyBtn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:text="history"
+    android:textSize="28sp" />
 
 
 </LinearLayout>
